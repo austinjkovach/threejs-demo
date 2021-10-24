@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <canvas id="c"></canvas>
+
+    <script type="module">
+      console.log('Hello box!');
+      // Find the latest version by visiting https://cdn.skypack.dev/three.
+      // https://threejs.org/docs/#manual/en/introduction/Installation
+      import * as THREE from 'https://cdn.skypack.dev/pin/three@v0.133.1-a8rkd0QTHl2tMZXZJAEw/mode=imports,min/optimized/three.js';
+
+      function main() {
+        const canvas = document.querySelector('#c');
+        const renderer = new THREE.WebGLRenderer({ canvas });
+      }
+    </script>
+  </body>
+</html>
